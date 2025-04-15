@@ -1,150 +1,243 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script type="text/javascript" src="/js/scripts.js"></script>
-        <style>
-            body{
-                width:100%;
-                height:200vh;
-                margin:0;
+<head>
+    <script type="text/javascript" src="/js/scripts.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+        :root{
+            --maxCanvasWidth:800px;
+        }
+
+        body{
             
-            }
-
-        /* header */
-            .header{
-                width:100%;
-                background-color:bisque;
-
-                position:sticky;
-                top:0;
-
-                display:flex;
-                justify-content: space-between;
-            }
-            .header .WorldHeritageSites{
-                width:auto;
-                background-color: firebrick;
-                
-                font-size:2rem;
-            }
-            .header .opt{
-                width:auto;
-                background-color:blue;
-
-                display:flex;
-                align-items:end;
-                
-            }
-            .header .opt > div{
-                width:auto;
-                height:auto;
-                background-color: firebrick;
-
-                margin:0 0.5rem;
-                display: flex;
-                align-items: end;
-                
-            }
+            /* height:200vh; */
+            background-color: gray;
+            margin:0;
             
-        /* woman */
-            /* @import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap'); */
-            @font-face {
-                font-family: myFont;
-                src: url('WinkyRough\\WinkyRough-VariableFont_wght.ttf');
-                wgth:12;
-                /* 'WinkyRough\\static\\WinkyRough-Black.ttf' */
+        }
+        .canvas{
+            width:100%;
+            max-width:var(--maxCanvasWidth);
+            /* height:200vh; */
+            background-color:white;
+            margin: 0 auto;
 
-            }
-            #woman{
-                width:100%;
-                background-color:aquamarine;
-            }
-            #woman .text{
-                font-family: myFont;
-                font-size:3rem;
-            }
-
-
-        /* footer */
-            .footer{
-                /* --paddingval: 0;
-                width:calc(100% - calc(var(--paddingval)*2)); */
-                width:100%;
-                height:auto;
-                background-color: aqua;
-
-                /* padding:0 var(--paddingval) ; */
-                position:fixed;
-                bottom:0%;
-                
-
-                display:grid;
-                grid:auto auto/ 1fr 1fr 1fr;
-                
-                /* display: grid; 
-                grid: auto auto / auto auto auto;
-                grid-auto-flow: dense;
-                
-                justify-content: space-around; */
-                /* align-content: space-evenly; */
-                /* justify-items: center; */
-            }
-            .footer > div{
-                height: 1.5rem;
-                width:50% ;
-                /* max-width: 10rem; */
-                padding:0 2rem;
-                /* width:10rem; */
-
-                border: 1px solid black ;
-                background-color:antiquewhite;
-                
-                text-align: center;
-                /* grid-area: 1/span 3; */
-                justify-self:center;
-                
-            }
-            #ContactUs{
-                grid-area: 2/1/2/4;
-                
-                text-align: left;
-                justify-self: left;
-
-            }
             
-            
-        </style>
-    </head>
 
-    <body>
-        <div class="header">
-            <div class="WorldHeritageSites">World Heritage Sites</div>
-            <div class="opt">
-                <div>Vision</div>
-                <div>Explore</div>
-                <div>Surprise Me</div>
-                <div>More</div>
-            </div>
+        }
+
+    /* header */
+        .header{
+            width:100%;
+            background-color:bisque;
+
+            position:sticky;
+            top:0;
+
+            display:flex;
+            justify-content: space-between;
+        }
+        .header .WorldHeritageSites{
+            width:auto;
+            background-color: firebrick;
+            
+            font-size:2rem;
+        }
+        .header .opt{
+            width:auto;
+            background-color:blue;
+
+            display:flex;
+            align-items:end;
+            
+        }
+        .header .opt > div{
+            width:auto;
+            height:auto;
+            background-color: firebrick;
+
+            margin:0 0.5rem;
+            display: flex;
+            align-items: end;
+            
+        }
+        
+    /* woman */
+        
+        /* @font-face {
+            font-family: myFont;
+            font-style: italic;
+            src: url('WinkyRough\\WinkyRough-Italic-VariableFont_wght.ttf');
+        }  */
+
+        #woman{
+            width:100%;
+            background-color:aquamarine;
+            display:flex;
+        }
+        #woman .text{
+            max-width:60%;
+            background-color:azure;
+
+            text-align: center;
+            font-family: 'Winky Rough';
+            font-weight:50;
+            font-style:italic;
+            font-size:5rem;
+        }
+
+    /* band */
+    .UNESCOband{
+        height:3rem;
+        width:100%;
+        background-color:cadetblue;
+        /* background-image: url(); */
+
+        color:red;
+    }
+
+    #nation > div{
+        height:15%;
+        width:100%;
+        background-color:mediumaquamarine;
+
+        display:flex;
+        
+        justify-content:space-between;
+        
+        font-size: 3rem;
+    }
+    #nation .text{
+        /* width:100px; */
+        background-color: aqua;
+        margin: 1rem 0;
+        padding: 0 1rem;
+
+        font-size: 6rem;
+    }
+    #nation .img{
+
+        /* display:inline; */
+        justify-self:right;
+    }
+
+    
+
+    /* footer */
+        .footer{
+            /* --paddingval: 0;
+            width:calc(100% - calc(var(--paddingval)*2)); */
+            width:100%;
+            max-width:var(--maxCanvasWidth);
+            height:auto;
+            background-color: aqua;
+
+            /* padding:0 var(--paddingval) ; */
+            position:sticky;
+            bottom:0%;
+            right:auto;
+            left:auto;
+            
+
+            display:grid;
+            grid:auto auto/ 1fr 1fr 1fr;
+            
+            /* display: grid; 
+            grid: auto auto / auto auto auto;
+            grid-auto-flow: dense;
+            
+            justify-content: space-around; */
+            /* align-content: space-evenly; */
+            /* justify-items: center; */
+        }
+        .footer > div{
+            height: 1.5rem;
+            width:50% ;
+            /* max-width: 10rem; */
+            padding:0 2rem;
+            /* width:10rem; */
+
+            border: 1px solid black ;
+            background-color:antiquewhite;
+            
+            text-align: center;
+            /* grid-area: 1/span 3; */
+            justify-self:center;
+            
+        }
+        #ContactUs{
+            grid-area: 2/1/2/4;
+            
+            text-align: left;
+            justify-self: left;
+
+        }
+        
+    /* debig */
+    .img{
+        background-color: aquamarine;
+        color:red;
+    }
+    </style>
+</head>
+
+<body>
+<div class="canvas">
+    <div class="header">
+        <div class="WorldHeritageSites">World Heritage Sites</div>
+        <div class="opt">
+            <div>Vision</div>
+            <div>Explore</div>
+            <div>Surprise Me</div>
+            <div>More</div>
         </div>
+    </div>
 
-        <div id="woman">
-            <div class="text">Road less traveled</div>
-            <div class="img">
-                <!-- <img> -->
-            </div>
+    
+
+    <div id="woman">
+        <div class="text">Road less traveled</div>
+        <div class="img">
+            img
         </div>
-        <div class="band"></div>
-        <div id="nation"></div>
-        <div id="definition"></div>
-
-
-
-        <div class="footer">
-            <div >Latest News</div>
-            <div >FAQ</div>
-            <div >Follow us</div>
-            <div id="ContactUs">  Contact us:       090909090912</div>
+    </div>
+    <div class="UNESCOband "> img</div>
+    
+    <div id="nation">
+        <div> 
+            <!-- Americakkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk -->
+            <div class="text">America</div> 
+            <div class="img"> img </div>
         </div>
+        <div> 
+            <div class="img"> img </div>
+            <div class="text">Europe</div> 
+        </div>
+        <div> 
+            <div class="text">Africa</div> 
+            <div class="img"> img </div>
+        </div>
+        <div> 
+            <div class="img"> img </div>
+            <div class="text">Asia</div> 
+        </div>
+    </div>
 
-    </body>
+    <div class="UNESCOband"> img </div>
+
+    <div id="definition"></div>
+
+
+
+    <div class="footer">
+        <div >Latest News</div>
+        <div >FAQ</div>
+        <div >Follow us</div>
+        <div id="ContactUs">  Contact us:       090909090912</div>
+    </div>
+
+</div>
+</body>
+        
 </html>

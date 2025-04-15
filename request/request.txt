@@ -1,0 +1,12 @@
+[img] find image for
+    that woman on the first page
+    UNESCO logo 
+    America Heritage site
+    Europe Heritage site
+    Africa Heritage site
+    Asia Heritage site
+       
+[URL] font family for
+    "World heritage site" header
+    "Road less traveled"
+
