@@ -23,11 +23,12 @@
             background-color:white;
             margin: 0 auto;
 
+            box-shadow: 0px 0px 10px 5px rgba(83, 83, 83, 0.558);
             
 
         }
 
-    /* header */
+/* header */
         .header{
             width:100%;
             background-color:bisque;
@@ -63,7 +64,7 @@
             
         }
         
-    /* woman */
+/* woman */
         
         /* @font-face {
             font-family: myFont;
@@ -87,42 +88,61 @@
             font-size:5rem;
         }
 
-    /* band */
-    .UNESCOband{
-        height:3rem;
-        width:100%;
-        background-color:cadetblue;
-        /* background-image: url(); */
+/* band */
+        .UNESCOband{
+            height:3rem;
+            width:100%;
+            background-color:cadetblue;
+            /* background-image: url(); */
+            box-shadow: 0px 0px 6px 3px rgba(54, 54, 54, 0.227) inset;
 
-        color:red;
-    }
+            color:red;
+        }
 
-    #nation > div{
-        height:15%;
-        width:100%;
-        background-color:mediumaquamarine;
+/* nation */
+        #nation > div{
+            height:15%;
+            width:100%;
+            background-color:mediumaquamarine;
 
-        display:flex;
-        
-        justify-content:space-between;
-        
-        font-size: 3rem;
-    }
-    #nation .text{
-        /* width:100px; */
-        background-color: aqua;
-        margin: 1rem 0;
-        padding: 0 1rem;
+            display:flex;
+            
+            justify-content:space-between;
+            
+            font-size: 3rem;
+        }
+        #nation .text{
+            /* width:100px; */
+            background-color: aqua;
+            margin: 1rem 0;
+            padding: 0 1rem;
 
-        font-size: 6rem;
-    }
-    #nation .img{
+            font-size: 6rem;
+        }
+        #nation .img{
 
-        /* display:inline; */
-        justify-self:right;
-    }
+            /* display:inline; */
+            justify-self:right;
+        }
 
-    
+/* definition */
+        #definition{
+            width:100%;
+            background-color: mediumpurple;
+
+            display:grid;
+            grid:1fr 1fr/ 40% 40%;
+            justify-content:space-evenly;
+        }
+        #definition div{
+            
+            background-color: navy;
+            margin: 1rem 0;
+
+            color:white;
+            text-align:center;
+            font-size:3rem;
+        }
 
     /* footer */
         .footer{
@@ -166,13 +186,14 @@
             justify-self:center;
             
         }
-        #ContactUs{
+        .footer #ContactUs{
             grid-area: 2/1/2/4;
             
             text-align: left;
             justify-self: left;
 
         }
+
         
     /* debig */
     .img{
@@ -226,7 +247,12 @@
 
     <div class="UNESCOband"> img </div>
 
-    <div id="definition"></div>
+    <div id="definition">
+        <div>What are world heritage sites?</div>
+        <div>text</div>
+        <div>text</div>
+        <div>How many sites are there worldwide?</div>
+    </div>
 
 
 
