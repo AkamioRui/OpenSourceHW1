@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="/js/scripts.js"></script>
+        <style>
+            body{
+                width:100%;
+                height:200vh;
+                margin:0;
+            
+            }
+
+        /* header */
+            .header{
+                width:100%;
+                background-color:bisque;
+
+                position:sticky;
+                top:0;
+
+                display:flex;
+                justify-content: space-between;
+            }
+            .header .WorldHeritageSites{
+                width:auto;
+                background-color: firebrick;
+                
+                font-size:2rem;
+            }
+            .header .opt{
+                width:auto;
+                background-color:blue;
+
+                display:flex;
+                align-items:end;
+                
+            }
+            .header .opt > div{
+                width:auto;
+                height:auto;
+                background-color: firebrick;
+
+                margin:0 0.5rem;
+                display: flex;
+                align-items: end;
+                
+            }
+            
+        /* woman */
+            /* @import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap'); */
+            @font-face {
+                font-family: myFont;
+                src: url('WinkyRough\\WinkyRough-VariableFont_wght.ttf');
+                wgth:12;
+                /* 'WinkyRough\\static\\WinkyRough-Black.ttf' */
+
+            }
+            #woman{
+                width:100%;
+                background-color:aquamarine;
+            }
+            #woman .text{
+                font-family: myFont;
+                font-size:3rem;
+            }
+
+
+        /* footer */
+            .footer{
+                /* --paddingval: 0;
+                width:calc(100% - calc(var(--paddingval)*2)); */
+                width:100%;
+                height:auto;
+                background-color: aqua;
+
+                /* padding:0 var(--paddingval) ; */
+                position:fixed;
+                bottom:0%;
+                
+
+                display:grid;
+                grid:auto auto/ 1fr 1fr 1fr;
+                
+                /* display: grid; 
+                grid: auto auto / auto auto auto;
+                grid-auto-flow: dense;
+                
+                justify-content: space-around; */
+                /* align-content: space-evenly; */
+                /* justify-items: center; */
+            }
+            .footer > div{
+                height: 1.5rem;
+                width:50% ;
+                /* max-width: 10rem; */
+                padding:0 2rem;
+                /* width:10rem; */
+
+                border: 1px solid black ;
+                background-color:antiquewhite;
+                
+                text-align: center;
+                /* grid-area: 1/span 3; */
+                justify-self:center;
+                
+            }
+            #ContactUs{
+                grid-area: 2/1/2/4;
+                
+                text-align: left;
+                justify-self: left;
+
+            }
+            
+            
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="WorldHeritageSites">World Heritage Sites</div>
+            <div class="opt">
+                <div>Vision</div>
+                <div>Explore</div>
+                <div>Surprise Me</div>
+                <div>More</div>
+            </div>
+        </div>
+
+        <div id="woman">
+            <div class="text">Road less traveled</div>
+            <div class="img">
+                <!-- <img> -->
+            </div>
+        </div>
+        <div class="band"></div>
+        <div id="nation"></div>
+        <div id="definition"></div>
+
+
+
+        <div class="footer">
+            <div >Latest News</div>
+            <div >FAQ</div>
+            <div >Follow us</div>
+            <div id="ContactUs">  Contact us:       090909090912</div>
+        </div>
+
+    </body>
+</html>
