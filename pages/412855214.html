@@ -6,7 +6,7 @@
 
     <style>
         .header .text{
-            background-color: brown;
+            color: rgb(255, 72, 31);
             font-size:2rem;
             margin:0 2rem;
         }
@@ -14,19 +14,55 @@
         
         .entry{
             width:100%;
-            background-color:red;
-            border:1px solid black;
+            background-color:rgb(237, 255, 255);
+
+
+        }
+        .entry .title{
+            font-size:2rem;
         }
         .entry .flex{
-            width:100%;
-            background-color: purple;
             
             display:flex;
+        
+
         }
         .entry .flex .profile{
-            min-width:30%;
+            width:40%;
+
+            display: flex;
+            flex-flow: column;
+            justify-content: start;
+        }
+        .entry .flex .profile img{
+            width:100%;
+            margin:0;
+
+        }
+        .entry .flex .profile .location{
+            align-self: center;
+            
+            
+        }
+        .entry .flex .descpription{
+            font-size: 1.56rem;
+            padding-left: 1rem;
+            width:60%;
+        }
+        
+        .entry .funfact{
+            color: rgb(255, 72, 31);
+            background-color: white;
+        }
+        
+       
+        
+        /* .entry . */
+        img{
+           width : 100%;
         }
 
+        
         
         
         
@@ -42,77 +78,85 @@
         </div>
 
        
-        <div class="img">
-            img
-        </div>
+        <img src="..\asset\Americas continent map.png">
 
-        <div class="entry">
-            <div style="background-color: chartreuse;">Machu Picchu</div>
+        <div class="allEntry">
+            <div class="entry">
+                <div class="title">Machu Picchu</div>
+        
+                <div class="flex">
+                    <div class="profile">
+                        <img src="..\asset\machu picchu.png">
+                        <div class="location" >Cusco Region, Peru</div>
+                    </div>
+                    <div class="descpription" >Nestled high in the Andes Mountains, Machu Picchu is a 15th-century Inca citadel that remained hidden from the outside world for centuries. It showcases the Inca civilization’s architectural mastery and deep connection with nature.</div>
+                </div>
+        
+                <div class="funfact"> Machu Picchu was never discovered by Spanish conquistadors, which helped preserve it from destruction.
+                </div>
+            </div>
     
-            <div class="flex">
-                <div class="profile">
-                    <div class="img" >img</div>
-                    <div class="location" style="background-color: khaki;">Cusco Region, Peru</div>
+            <div class="entry">
+                <div class="title"> Statue of Liberty </div>
+                <div class="flex">
+                    <div class="profile">
+                        <img src="..\asset\statue of liberty.png">
+                        <div class="location" > New York, United States </div>
+                    </div>
+                    <div class="descpription" > A gift from France to the United States in 1886, the Statue of Liberty is a universal symbol of freedom and democracy. It stands at the entrance of New York Harbor, welcoming immigrants and visitors alike. </div>
                 </div>
-                <div class="descpription" style="background-color: honeydew;">Nestled high in the Andes Mountains, Machu Picchu is a 15th-century Inca citadel that remained hidden from the outside world for centuries. It showcases the Inca civilization’s architectural mastery and deep connection with nature.</div>
+                <div class="funfact">  The full name of the statue is "Liberty Enlightening the World.  </div>
             </div>
-    
-            <div style="background-color:brown"> Machu Picchu was never discovered by Spanish conquistadors, which helped preserve it from destruction.
-            </div>
-        </div>
-
-        <div class="entry">
-            <div style="background-color: chartreuse;"> Statue of Liberty </div>
-            <div class="flex">
-                <div class="descpription" style="background-color: honeydew;"> A gift from France to the United States in 1886, the Statue of Liberty is a universal symbol of freedom and democracy. It stands at the entrance of New York Harbor, welcoming immigrants and visitors alike. </div>
-                
-                <div class="profile">
-                    <div class="img" >img</div>
-                    <div class="location" style="background-color: khaki;"> New York, United States </div>
+            <div class="entry">
+                <div class="title"> Chichen Itza </div>
+                <div class="flex">
+                    <div class="profile">
+                        <img src="..\asset\chichen itza.png">
+                        <div class="location" > Yucatán, Mexico </div>
+                    </div>
+                    <div class="descpription" > Chichen Itza was one of the largest and most powerful Maya cities, known for its massive step pyramid, El Castillo. The site reflects the advanced astronomical, architectural, and artistic achievements of the Maya civilization. </div>
                 </div>
+                <div class="funfact">  During the spring and fall equinoxes, the sun creates a shadow that looks like a serpent slithering down the pyramid steps.  </div>
             </div>
-            <div style="background-color:brown">  The full name of the statue is "Liberty Enlightening the World. </div>
-        </div>
-        <div class="entry">
-            <div style="background-color: chartreuse;"> Chichen Itza </div>
-            <div class="flex">
-                <div class="profile">
-                    <div class="img" >img</div>
-                    <div class="location" style="background-color: khaki;"> Yucatán, Mexico </div>
+            <div class="entry">
+                <div class="title"> Cartagena de Indias </div>
+                <div class="flex">
+                    <div class="profile">
+                        <img src="..\asset\cartagena de indias.png">
+                        <div class="location" > Bolívar Department, Colombia </div>
+                    </div>
+                    <div class="descpription" > Cartagena is a walled colonial city on the Caribbean coast, renowned for its colorful buildings, cobblestone streets, and Spanish fortifications. It played a key role in trade and defense during the Spanish Empire. </div>
                 </div>
-                <div class="descpription" style="background-color: honeydew;"> Chichen Itza was one of the largest and most powerful Maya cities, known for its massive step pyramid, El Castillo. The site reflects the advanced astronomical, architectural, and artistic achievements of the Maya civilization. </div>
+                <div class="funfact">  The walls of Cartagena took nearly 200 years to complete and were built to defend the city from pirates.  </div>
             </div>
-            <div style="background-color:brown">  During the spring and fall equinoxes, the sun creates a shadow that looks like a serpent slithering down the pyramid steps. </div>
-        </div>
-        <div class="entry">
-            <div style="background-color: chartreuse;"> Cartagena de Indias </div>
-            <div class="flex">
-                <div class="descpription" style="background-color: honeydew;"> Cartagena is a walled colonial city on the Caribbean coast, renowned for its colorful buildings, cobblestone streets, and Spanish fortifications. It played a key role in trade and defense during the Spanish Empire. </div>
-                <div class="profile">
-                    <div class="img" >img</div>
-                    <div class="location" style="background-color: khaki;"> Bolívar Department, Colombia </div>
+            <!-- <div class="entry">
+                <div class="title"> Galápagos Islands </div>
+                <div class="flex">
+                    <div class="profile">
+                        <img src="..\asset\galapagos island.png">
+                        <div class="location" > Pacific Ocean, Ecuador </div>
+                    </div>
+                    <div class="descpription" > The Galápagos Islands are famed for their unique wildlife, much of which is found nowhere else on Earth. The islands played a pivotal role in Charles Darwin’s development of the theory of evolution by natural selection. </div>
                 </div>
-            </div>
-            <div style="background-color:brown">  The walls of Cartagena took nearly 200 years to complete and were built to defend the city from pirates. </div>
-        </div>
-        <div class="entry">
-            <div style="background-color: chartreuse;"> Galápagos Islands </div>
-            <div class="flex">
-                <div class="profile">
-                    <div class="img" >img</div>
-                    <div class="location" style="background-color: khaki;"> Pacific Ocean, Ecuador </div>
-                </div>
-                <div class="descpription" style="background-color: honeydew;"> The Galápagos Islands are famed for their unique wildlife, much of which is found nowhere else on Earth. The islands played a pivotal role in Charles Darwin’s development of the theory of evolution by natural selection. </div>
-            </div>
-            <div style="background-color:brown">  The Galápagos are home to giant tortoises that can live over 100 years and weigh up to 900 pounds. </div>
+                <div class="funfact">  The Galápagos are home to giant tortoises that can live over 100 years and weigh up to 900 pounds.  </div>
+            </div> -->
         </div>
 
 
         <div class="footer">
-            <div >Latest News</div>
-            <div >FAQ</div>
-            <div >Follow us</div>
-            <div id="ContactUs">  Contact us:       090909090912</div>
+            <img src="..\asset\machu picchu.png">
+
+            <div>
+                <div >Latest News</div>
+                <div >FAQ</div>
+                <div >Follow us</div>
+            </div>
+
+            <div id="ContactUs">
+                <div >Contact us:</div>
+                <div>090909090912</div>
+            </div>
+              
         </div>
 
     </div>

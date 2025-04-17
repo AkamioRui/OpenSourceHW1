@@ -103,17 +103,17 @@ The full name of the statue is "Liberty Enlightening the World.
             
         fprintf(dest,
         "<div class=\"entry\">\n"
-        "    <div style=\"background-color: chartreuse;\">%s</div>\n"
+        "    <div class=\"title\">%s</div>\n"
         "    <div class=\"flex\">\n"
-        "        <div class=\"descpription\" style=\"background-color: honeydew;\">%s</div>\n"
         "        <div class=\"profile\">\n"
-        "            <div class=\"img\" >img</div>\n"
-        "            <div class=\"location\" style=\"background-color: khaki;\">%s</div>\n"
+        "            <img src=\"..\\asset\\machu picchu.png\">\n"
+        "            <div class=\"location\" >%s</div>\n"
         "        </div>\n"
+        "        <div class=\"descpription\" >%s</div>\n"
         "    </div>\n"
-        "    <div style=\"background-color:brown\"> %s</div>\n"
+        "    <div class=\"funfact\"> %s </div>\n"
         "</div>\n"
-        , name, description, location, funfact);
+        , name, location, description, funfact);
         
     }
         
@@ -128,18 +128,18 @@ The full name of the statue is "Liberty Enlightening the World.
 
 /* 
 printf(
-"<div class=\"entry\">"
-"    <div style=\"background-color: chartreuse;\">Statue of Liberty</div>"
-"    <div class=\"flex\">"
-"        <div class=\"descpription\" style=\"background-color: honeydew;\">Nestled high in the Andes Mountains, Machu Picchu is a 15th-century Inca citadel that remained hidden from the outside world for centuries. It showcases the Inca civilization’s architectural mastery and deep connection with nature.</div>"
-"        <div class=\"profile\">"
-"            <div class=\"img\" >img</div>"
-"            <div class=\"location\" style=\"background-color: khaki;\">Cusco Region, Peru</div>"
-"        </div>"
-"    </div>"
+"<div class=\"entry\">\n"
+"    <div style=\"background-color: chartreuse;\">Statue of Liberty</div>\n"
+"    <div class=\"flex\">\n"
+"        <div class=\"descpription\" style=\"background-color: honeydew;\">Nestled high in the Andes Mountains, Machu Picchu is a 15th-century Inca citadel that remained hidden from the outside world for centuries. It showcases the Inca civilization’s architectural mastery and deep connection with nature.</div>\n"
+"        <div class=\"profile\">\n"
+"            <div class=\"img\" >img</div>\n"
+"            <div class=\"location\" style=\"background-color: khaki;\">Cusco Region, Peru</div>\n"
+"        </div>\n"
+"    </div>\n"
 "    <div style=\"background-color:brown\"> Machu Picchu was never discovered by Spanish conquistadors, which helped preserve it from ""destruction."
-"    </div>"
-"</div>"
+"    </div>\n"
+"</div>\n"
         );
          */
 

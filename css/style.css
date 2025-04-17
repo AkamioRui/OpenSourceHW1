@@ -8,7 +8,7 @@
         body{
             
             /* height:200vh; */
-            background-color: gray;
+            background-color: white;
             margin:0;
             
         }
@@ -19,7 +19,7 @@
             background-color:white;
             margin: 0 auto;
 
-            box-shadow: 0px 0px 10px 5px rgba(83, 83, 83, 0.558);
+            /* box-shadow: 0px 0px 10px 5px rgba(83, 83, 83, 0.558); */
             
 
         }
@@ -27,7 +27,8 @@
 /* header */
         .header{
             width:100%;
-            background-color:bisque;
+            background-color:white;
+            /* background-color:rgb(141, 239, 244); */
 
             position:sticky;
             top:0;
@@ -38,22 +39,23 @@
         }
         .header .WorldHeritageSites{
             width:auto;
-            background-color: firebrick;
+            /* background-color: firebrick; */
             
             font-size:2rem;
         }
         .header .opt{
             width:auto;
-            background-color:blue;
+            /* background-color:blue; */
 
             display:flex;
             align-items:end;
+            font-size:1rem;
             
         }
         .header .opt > div{
             width:auto;
             height:auto;
-            background-color: firebrick;
+            /* background-color: firebrick; */
 
             margin:0 0.5rem;
             display: flex;
@@ -76,7 +78,7 @@
         }
         #woman .text{
             max-width:60%;
-            background-color:azure;
+            background-color:rgb(237, 255, 255);
 
             text-align: center;
             font-family: 'Winky Rough';
@@ -97,48 +99,72 @@
         }
 
 /* nation */
+        #nation{
+            width:100%;
+        }
         #nation > div{
             height:15%;
             width:100%;
-            background-color:mediumaquamarine;
+            background-color:rgb(237, 255, 255);
 
             display:flex;
-            
             justify-content:space-between;
             
             font-size: 3rem;
         }
         #nation .text{
-            /* width:100px; */
+            
             background-color: aqua;
-            margin: 1rem 0;
+            /* margin: 1rem 0; */
             padding: 0 1rem;
-
+            
             font-size: 6rem;
+            display:flex;
         }
-        #nation .img{
+        #nation img{
 
-            /* display:inline; */
-            justify-self:right;
+            width:50%;
+            justify-self: right;
+            /* position:absolute;
+            right: */
+        }
+        #nation .America{
+            color:red;
+        }
+        #nation .Europe{
+            background-color:blue;
+        }
+        #nation .Africa{
+            background-color:green;
+        }
+        #nation .Asia{
+            background-color:yellow;
         }
 
 /* definition */
         #definition{
             width:100%;
-            background-color: mediumpurple;
+            background-color: navy;
 
             display:grid;
-            grid:1fr 1fr/ 40% 40%;
-            justify-content:space-evenly;
+            grid:1fr 1fr/ 1fr 1fr;
+            /* justify-content:space-evenly; */
         }
         #definition div{
-            
-            background-color: navy;
+            /* width:100%; */
+            /* background-color: navy; */
             /* margin: 1rem 0; */
 
             color:white;
             text-align:center;
+            margin:auto;
+            /* font-size:3rem; */
+        }
+        #definition .question{
+            height:100%;
+            background-color: rgb(0, 47, 255);
             font-size:3rem;
+            line-height: 100%;
         }
 
     /* footer */
@@ -147,47 +173,35 @@
             width:calc(100% - calc(var(--paddingval)*2)); */
             width:100%;
             max-width:var(--maxCanvasWidth);
-            height:auto;
-            background-color: aqua;
+            /* padding:1rem 0; */
+            background-color:rgb(237, 255, 255);
 
             /* padding:0 var(--paddingval) ; */
-            position:sticky;
+            /* position:sticky;
             bottom:0%;
             right:auto;
-            left:auto;
+            left:auto; */
             
-
-            display:grid;
-            grid:auto auto/ 1fr 1fr 1fr;
-            
-            /* display: grid; 
-            grid: auto auto / auto auto auto;
-            grid-auto-flow: dense;
-            
-            justify-content: space-around; */
-            /* align-content: space-evenly; */
-            /* justify-items: center; */
+            display:flex;
+            justify-content:space-evenly;
+            align-items: center;
+                      
+        }
+        .footer img{
+            margin:1rem 0;
+            width:20%;
         }
         .footer > div{
-            height: 1.5rem;
-            width:50% ;
-            /* max-width: 10rem; */
-            padding:0 2rem;
-            /* width:10rem; */
-
-            border: 1px solid black ;
-            background-color:antiquewhite;
+            height:100%;
             
-            text-align: center;
-            /* grid-area: 1/span 3; */
-            justify-self:center;
+
             
         }
+        .footer > div > div{
+            margin: 0.5rem 0;
+        }
         .footer #ContactUs{
-            grid-area: 2/1/2/4;
             
-            text-align: left;
-            justify-self: left;
 
         }
 
