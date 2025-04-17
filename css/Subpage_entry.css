@@ -11,6 +11,8 @@
         }
         .entry .title{
             font-size:2rem;
+            text-align: center; 
+            font-weight: bold;
         }
         .entry .flex{
             
@@ -44,6 +46,7 @@
         .entry .funfact{
             color: rgb(255, 72, 31);
             background-color: white;
+            text-align: center;
         }
 
         .entry .funfactasia{
