@@ -32,8 +32,11 @@
         <div class="America" > 
             
             <div class="text" >America</div>
-            <!-- href="412855214.html" -->
-            <!-- window.open('412855214.html') -->
+            <script>
+                document.getElementsByClassName("America")[0].getElementsByClassName("text")[0].addEventListener('click',()=>{window.location.href='pages/412855214.html'},false);
+            </script>
+
+
             <div class="imgSlider" style="
             --src:
                 ..\\asset\\machu picchu.png,
@@ -41,15 +44,10 @@
                 ..\\asset\\chichen itza.png,
                 ..\\asset\\cartagena de indias.png,
                 ..\\asset\\galapagos island.png;
-            --idx:0;">
-                
-
-                <script>
-                    runSlider(document.getElementById("nation").getElementsByClassName("America")[0].getElementsByClassName("imgSlider")[0]);
-                    
-                    document.getElementsByClassName("America")[0].getElementsByClassName("text")[0].addEventListener('click',()=>{window.location.href='412855214.html'},false);
-                </script>
-            </div>
+            --idx:0;"></div>
+            <script>
+                runSlider(document.getElementById("nation").getElementsByClassName("America")[0].getElementsByClassName("imgSlider")[0]);
+            </script>
             
         </div>
 
@@ -61,18 +59,22 @@
             ..\\asset\\historic centre of florence.png,
             ..\\asset\\stonehenge.png,
             ..\\asset\\historic centre of bruges.png;
-            --idx:0;">
-                <script>
-                    runSlider(document.getElementById("nation").getElementsByClassName("Europe")[0].getElementsByClassName("imgSlider")[0]);
-
-                    document.getElementsByClassName("Europe")[0].getElementsByClassName("text")[0].addEventListener('click',()=>{window.location.href='412855503.html'},false);
-                </script>
-            </div>
+            --idx:0;"></div>
+            <script>
+                runSlider(document.getElementById("nation").getElementsByClassName("Europe")[0].getElementsByClassName("imgSlider")[0]);
+            </script>
+            
 
             <div class="text">Europe</div> 
+            <script>
+                document.getElementsByClassName("Europe")[0].getElementsByClassName("text")[0].addEventListener('click',()=>{window.location.href='pages/412855503.html'},false);
+            </script>
         </div>
         <div class="Africa"> 
             <div class="text">Africa</div> 
+            <script>
+                document.getElementsByClassName("Africa")[0].getElementsByClassName("text")[0].addEventListener('click',()=>{window.location.href='pages/412636085.html'},false);
+            </script>
 
             <div class="imgSlider" style="
             --src:
@@ -84,8 +86,6 @@
             --idx:0;">
                 <script>
                     runSlider(document.getElementById("nation").getElementsByClassName("Africa")[0].getElementsByClassName("imgSlider")[0]);
-
-                    document.getElementsByClassName("Africa")[0].getElementsByClassName("text")[0].addEventListener('click',()=>{window.location.href='412636085.html'},false);
                 </script>
             </div>
         </div>
@@ -101,44 +101,16 @@
                 <script>
                     runSlider(document.getElementById("nation").getElementsByClassName("Asia")[0].getElementsByClassName("imgSlider")[0]);
 
-                    document.getElementsByClassName("Asia")[0].getElementsByClassName("text")[0].addEventListener('click',()=>{window.location.href='412855255.html'},false);
+                    
                 </script>
             </div>
             <div class="text">Asia</div> 
+            <script>
+                document.getElementsByClassName("Asia")[0].getElementsByClassName("text")[0].addEventListener('click',()=>{window.location.href='pages/412855255.html'},false);
+            </script>
         </div> 
 
 
-
-                <!-- 
-                America
-                ..\asset\machu picchu.png
-                ..\asset\statue of liberty.png
-                ..\asset\chichen itza.png
-                ..\asset\cartagena de indias.png
-                ..\asset\galapagos island.png
-
-                Europe 
-                ..\asset\palace of versailles.png
-                ..\asset\acropolis of athens.png
-                ..\asset\historic centre of florence.png
-                ..\asset\stonehenge.png
-                ..\asset\historic centre of bruges.png
-
-                Africa
-
-
-
-
-
-
-                Asia
-                ..\\asset\\great wall of china.png,
-                ..\\asset\\taj mahal.png,
-                ..\\asset\\angkor wat.png,
-                ..\\asset\\Istanbul historic centre.png,
-                ..\\asset\\Kimeji castle.png;
-
-                -->
 
     </div>
 
