@@ -1,8 +1,9 @@
-function clickable(){
-    let slider = document.getElementById("nation").getElementsByClassName("America")[0].getElementsByClassName("imgSlider")[0];
+function runSlider(slider){
     initSlider(slider);
-    moveSlider(slider);
-    // let animationId2 = setInterval(moveSlider(slider),5000);
+    // moveSlider(slider);
+    let animationId2 = setInterval(()=>{
+        moveSlider(slider);
+    },7000);
 }
 function initSlider(slider){
     let src = slider.style.getPropertyValue('--src').split(/,[\s]*/); 
@@ -11,16 +12,15 @@ function initSlider(slider){
         let img1 = document.createElement('img');
         img1.style.position ='absolute'; 
         img1.style.width ='100%';
-        img1.style.opacity ='50%';
-        img1.src = src[idx];
         img1.style.transform = "";
+        img1.src = src[idx];
 
+ 
         let img2 = document.createElement('img');
         img2.style.position ='absolute'; 
         img2.style.width ='100%';
-        img2.style.opacity ='50%';
-        img2.src = src[idx];
         img2.style.transform = "translateX(100%)";
+        img2.src = src[idx];
         
         slider.appendChild(img1);
         slider.appendChild(img2);
@@ -44,7 +44,7 @@ function moveSlider(slider){
     }
     imghidden.src = src[nextidx];
     
-    console.log(imgshow.naturalWidth / imgshow.naturalHeight);
+    // console.log(imgshow.naturalWidth / imgshow.naturalHeight);
     
 
     let animationId = setInterval(frame,40);//24fps
@@ -67,59 +67,6 @@ function moveSlider(slider){
 
 }
 
-
-function move(canvas){
-    // const canvas = document.getElementsByClassName('canvas')[0];
-    const imgArr = canvas.getElementsByTagName('img');
-    
-    const imgsrc = canvas.style.getPropertyValue("--src").split(',');
-    const imgsrc_len = imgsrc.length;
-    let idx = Number(canvas.style.getPropertyValue('--idx'));
-    let nextIdx = (idx+1)%imgsrc_len ;//% imgsrc_len
-
-    
-    
-    //intial
-    imgArr[0].src = imgsrc[idx];
-    imgArr[1].src = imgsrc[nextIdx];
-    canvas.style.setProperty('--idx',nextIdx);
-    
-    
-    //animation
-    let frameId = 0;
-    const frameEnd = 24*1;
-
-    const animationId = setInterval(frame,80);
-    function frame(){
-           
-
-        // x=[ 0 to 100% ]
-        imgArr[0].style.transform = "translateX("
-        +interpolate(0,100,frameId,frameEnd);
-        +"%)";
-        
-        // x=[ -200% to -100% ]
-        imgArr[1].style.transform = "translateX("
-        +interpolate(0,100,frameId,frameEnd)
-        +"%)";
-
-        
-        
-        
-        frameId++;
-        if(frameId == frameEnd + 1) {
-            clearInterval(animationId);
-            imgArr[0].src = imgsrc[nextIdx];
-            imgArr[0].style.transform = "";
-            imgArr[1].style.transform = "";
-            
-        }
-    }
-    
-   
-    
-    
-}
 
 function interpolate(start,end,t,tmax){
     x = t/tmax*2;

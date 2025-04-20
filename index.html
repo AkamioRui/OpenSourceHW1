@@ -30,36 +30,82 @@
     
     <div id="nation">
         <div class="America" > 
-            <div class="text" onclick="clickable()">America</div>
+            
+            <div class="text" >America</div>
+            <!-- href="412855214.html" -->
+            <!-- window.open('412855214.html') -->
             <div class="imgSlider" style="
             --src:
-                ..\asset\machu picchu.png,
-                ..\asset\statue of liberty.png,
-                ..\asset\chichen itza.png,
-                ..\asset\cartagena de indias.png,
-                ..\asset\galapagos island.png;
+                ..\\asset\\machu picchu.png,
+                ..\\asset\\statue of liberty.png,
+                ..\\asset\\chichen itza.png,
+                ..\\asset\\cartagena de indias.png,
+                ..\\asset\\galapagos island.png;
             --idx:0;">
                 
 
                 <script>
-                    // startSlide(document.getElementById("nation").getElementsByClassName("America")[0].getElementsByClassName("imgSlider")[0])
+                    runSlider(document.getElementById("nation").getElementsByClassName("America")[0].getElementsByClassName("imgSlider")[0]);
+                    
+                    document.getElementsByClassName("America")[0].getElementsByClassName("text")[0].addEventListener('click',()=>{window.location.href='412855214.html'},false);
+                </script>
+            </div>
+            
+        </div>
+
+        <div class="Europe"> 
+            <div class="imgSlider" style="
+            --src:
+            ..\\asset\\palace of versailles.png,
+            ..\\asset\\acropolis of athens.png,
+            ..\\asset\\historic centre of florence.png,
+            ..\\asset\\stonehenge.png,
+            ..\\asset\\historic centre of bruges.png;
+            --idx:0;">
+                <script>
+                    runSlider(document.getElementById("nation").getElementsByClassName("Europe")[0].getElementsByClassName("imgSlider")[0]);
+
+                    document.getElementsByClassName("Europe")[0].getElementsByClassName("text")[0].addEventListener('click',()=>{window.location.href='412855503.html'},false);
                 </script>
             </div>
 
+            <div class="text">Europe</div> 
         </div>
-        <!-- 
-        <div class="Europe" class="text"> 
-            <img src="..\asset\galapagos island.png">
-            <div>Europe</div> 
+        <div class="Africa"> 
+            <div class="text">Africa</div> 
+
+            <div class="imgSlider" style="
+            --src:
+            ..\\asset\\pyramids of giza.png,
+            ..\\asset\\Rock hewn churches of Liberia.png,
+            ..\\asset\\timbuktu.png,
+            ..\\asset\\serengeti national park.png,
+            ..\\asset\\Island of goree.png;
+            --idx:0;">
+                <script>
+                    runSlider(document.getElementById("nation").getElementsByClassName("Africa")[0].getElementsByClassName("imgSlider")[0]);
+
+                    document.getElementsByClassName("Africa")[0].getElementsByClassName("text")[0].addEventListener('click',()=>{window.location.href='412636085.html'},false);
+                </script>
+            </div>
         </div>
-        <div class="Africa" class="text"> 
-            <div>Africa</div> 
-            <img src="..\asset\galapagos island.png">
-        </div>
-        <div class="Asia" class="text"> 
-            <img src="..\asset\galapagos island.png">
-            <div>Asia</div> 
-        </div> -->
+        <div class="Asia"> 
+            <div class="imgSlider" style="
+            --src:
+            ..\\asset\\great wall of china.png,
+            ..\\asset\\taj mahal.png,
+            ..\\asset\\angkor wat.png,
+            ..\\asset\\Istanbul historic centre.png,
+            ..\\asset\\Kimeji castle.png;
+            --idx:0;">
+                <script>
+                    runSlider(document.getElementById("nation").getElementsByClassName("Asia")[0].getElementsByClassName("imgSlider")[0]);
+
+                    document.getElementsByClassName("Asia")[0].getElementsByClassName("text")[0].addEventListener('click',()=>{window.location.href='412855255.html'},false);
+                </script>
+            </div>
+            <div class="text">Asia</div> 
+        </div> 
 
 
 
@@ -79,18 +125,18 @@
                 ..\asset\historic centre of bruges.png
 
                 Africa
-                ..\asset\pyramids of giza.png
-                ..\asset\Rock hewn churches of Liberia.png
-                ..\asset\timbuktu.png
-                ..\asset\serengeti national park.png
-                ..\asset\Island of goree.png
+
+
+
+
+
 
                 Asia
-                ..\asset\great wall of china.png
-                ..\asset\taj mahal.png
-                ..\asset\angkor wat.png
-                ..\asset\Istanbul historic centre.png
-                ..\asset\Kimeji castle.png
+                ..\\asset\\great wall of china.png,
+                ..\\asset\\taj mahal.png,
+                ..\\asset\\angkor wat.png,
+                ..\\asset\\Istanbul historic centre.png,
+                ..\\asset\\Kimeji castle.png;
 
                 -->
 
