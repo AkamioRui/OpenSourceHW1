@@ -3,7 +3,7 @@ function runSlider(slider){
     // moveSlider(slider);
     let animationId2 = setInterval(()=>{
         moveSlider(slider);
-    },7000);
+    },4000);
 }
 function initSlider(slider){
     let src = slider.style.getPropertyValue('--src').split(/,[\s]*/); 
@@ -35,7 +35,7 @@ function moveSlider(slider){
     
     
     let imgshow, imghidden;
-    if(slider.children[1].style.transform == ''){
+    if(slider.getElementsByTagName('img')[0].style.transform == ''){
         imgshow = slider.getElementsByTagName('img')[0]; 
         imghidden = slider.getElementsByTagName('img')[1]; 
     } else {
