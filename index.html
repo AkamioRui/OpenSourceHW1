@@ -29,50 +29,88 @@
     <div class="UNESCOband "> </div>
     
     <div id="nation">
-        <div class="America"> 
-            <div>America</div> 
-            <img src="..\asset\galapagos island.png">
+        <div class="America" > 
+            <div class="text" onclick="clickable()">America</div>
+            <div class="imgSlider" style="
+            --src:
+                ..\asset\machu picchu.png,
+                ..\asset\statue of liberty.png,
+                ..\asset\chichen itza.png,
+                ..\asset\cartagena de indias.png,
+                ..\asset\galapagos island.png;
+            --idx:0;">
+                
+
+                <script>
+                    // startSlide(document.getElementById("nation").getElementsByClassName("America")[0].getElementsByClassName("imgSlider")[0])
+                </script>
+            </div>
+
         </div>
-        <div class="Europe"> 
+        <!-- 
+        <div class="Europe" class="text"> 
             <img src="..\asset\galapagos island.png">
             <div>Europe</div> 
         </div>
-        <div class="Africa"> 
+        <div class="Africa" class="text"> 
             <div>Africa</div> 
             <img src="..\asset\galapagos island.png">
         </div>
-        <div class="Asia"> 
+        <div class="Asia" class="text"> 
             <img src="..\asset\galapagos island.png">
             <div>Asia</div> 
-        </div>
+        </div> -->
 
+
+
+                <!-- 
+                America
+                ..\asset\machu picchu.png
+                ..\asset\statue of liberty.png
+                ..\asset\chichen itza.png
+                ..\asset\cartagena de indias.png
+                ..\asset\galapagos island.png
+
+                Europe 
+                ..\asset\palace of versailles.png
+                ..\asset\acropolis of athens.png
+                ..\asset\historic centre of florence.png
+                ..\asset\stonehenge.png
+                ..\asset\historic centre of bruges.png
+
+                Africa
+                ..\asset\pyramids of giza.png
+                ..\asset\Rock hewn churches of Liberia.png
+                ..\asset\timbuktu.png
+                ..\asset\serengeti national park.png
+                ..\asset\Island of goree.png
+
+                Asia
+                ..\asset\great wall of china.png
+                ..\asset\taj mahal.png
+                ..\asset\angkor wat.png
+                ..\asset\Istanbul historic centre.png
+                ..\asset\Kimeji castle.png
+
+                -->
 
     </div>
 
     <div class="UNESCOband"></div>
 
     <div id="definition">
-        <div class="question">What are world heritage sites?</div>
+        <div class="question"><div>What are world heritage sites?</div></div>
         <div>World Heritage Sites are natural or cultural landmarks recognized by UNESCO for their "Outstanding Universal Value". These sites are of immense importance to humanity and are protected for future generations. </div>
         <div>As of July 2024, there are a total of 1,223 World Heritage Sites located across 168 countries. These sites are categorized as cultural (952), natural (231), or mixed (40) properties.</div>
-        <div class="question">How many sites are there worldwide?</div>
+        <div class="question"><div>How many sites are there worldwide?</div></div>
     </div>
 
 
 
     <div class="footer">
-        <img src="..\asset\unesco_logo.png">
-
-        <div>
-            <div >Latest News</div>
-            <div >FAQ</div>
-            <div >Follow us</div>
-        </div>
-
-        <div id="ContactUs">
-            <div >Contact us:</div>
-            <div>090909090912</div>
-        </div>
+        <script>
+            loadFooter();
+        </script>
           
     </div>
 
