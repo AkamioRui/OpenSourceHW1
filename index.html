@@ -1,138 +1,199 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <script type="text/javascript" src="/js/scripts.js"></script>
-    <link rel="stylesheet" type="text/css" href="css\style.css">
-</head>
+  <head>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-<div class="canvas">
-    <div class="header">
+  <body>
+    <div class="canvas">
+      <div class="header">
         <div class="WorldHeritageSites">World Heritage Sites</div>
         <div class="opt">
-            <div>Vision</div>
-            <div>Explore</div>
-            <div>Surprise Me</div>
-            <div>More</div>
+          <div>Vision</div>
+          <div>Explore</div>
+          <div>Surprise Me</div>
+          <div>More</div>
         </div>
-    </div>
-
-    
-
-    <div id="woman">
+      </div>
+      <div id="woman">
         <div class="text">Road less traveled</div>
-        <!-- <div class="img">
-            
-        </div> -->
-        <img src="..\asset\AudreyAzoulay.png">
-    </div>
-    <div class="UNESCOband "> </div>
-    
-    <div id="nation">
-        <div class="America" > 
-            
-            <div class="text" >America</div>
-            <script>
-                document.getElementsByClassName("America")[0].getElementsByClassName("text")[0].addEventListener('click',()=>{window.location.href='pages/412855214.html'},false);
-            </script>
+        <img src="asset/AudreyAzoulay.png" />
+      </div>
+      <div class="UNESCOband"></div>
 
+      <div id="nation">
+        <div class="America">
+          <div class="text">America</div>
+          <script>
+            document
+              .getElementsByClassName("America")[0]
+              .getElementsByClassName("text")[0]
+              .addEventListener(
+                "click",
+                () => {
+                  window.location.href = "pages/412855214.html";
+                },
+                false
+              );
+          </script>
 
-            <div class="imgSlider" style="
-            --src:
-                ..\\asset\\machu picchu.png,
-                ..\\asset\\statue of liberty.png,
-                ..\\asset\\chichen itza.png,
-                ..\\asset\\cartagena de indias.png,
-                ..\\asset\\galapagos island.png;
-            --idx:0;"></div>
-            <script>
-                runSlider(document.getElementById("nation").getElementsByClassName("America")[0].getElementsByClassName("imgSlider")[0]);
-            </script>
-            
+          <div
+            class="imgSlider"
+            style="
+              --src: asset/machu_picchu.png, asset/statue_of_liberty.png,
+                asset/chichen_itza.png, asset/cartagena_de_indias.png,
+                asset/galapagos_island.png;
+              --idx: 0;
+            "
+          ></div>
+          <script>
+            runSlider(
+              document
+                .getElementById("nation")
+                .getElementsByClassName("America")[0]
+                .getElementsByClassName("imgSlider")[0]
+            );
+          </script>
         </div>
 
-        <div class="Europe"> 
-            <div class="imgSlider" style="
-            --src:
-            ..\\asset\\palace of versailles.png,
-            ..\\asset\\acropolis of athens.png,
-            ..\\asset\\historic centre of florence.png,
-            ..\\asset\\stonehenge.png,
-            ..\\asset\\historic centre of bruges.png;
-            --idx:0;"></div>
-            <script>
-                runSlider(document.getElementById("nation").getElementsByClassName("Europe")[0].getElementsByClassName("imgSlider")[0]);
-            </script>
-            
+        <div class="Europe">
+          <div
+            class="imgSlider"
+            style="
+              --src: asset/palace_of_versailles.png,
+                asset/acropolis_of_athens.png,
+                asset/historic_centre_of_florence.png, asset/stonehenge.png,
+                asset/historic_centre_of_bruges.png;
+              --idx: 0;
+            "
+          ></div>
+          <script>
+            runSlider(
+              document
+                .getElementById("nation")
+                .getElementsByClassName("Europe")[0]
+                .getElementsByClassName("imgSlider")[0]
+            );
+          </script>
 
-            <div class="text">Europe</div> 
-            <script>
-                document.getElementsByClassName("Europe")[0].getElementsByClassName("text")[0].addEventListener('click',()=>{window.location.href='pages/412855503.html'},false);
-            </script>
+          <div class="text">Europe</div>
+          <script>
+            document
+              .getElementsByClassName("Europe")[0]
+              .getElementsByClassName("text")[0]
+              .addEventListener(
+                "click",
+                () => {
+                  window.location.href = "pages/412855503.html";
+                },
+                false
+              );
+          </script>
         </div>
-        <div class="Africa"> 
-            <div class="text">Africa</div> 
-            <script>
-                document.getElementsByClassName("Africa")[0].getElementsByClassName("text")[0].addEventListener('click',()=>{window.location.href='pages/412636085.html'},false);
-            </script>
+        <div class="Africa">
+          <div class="text">Africa</div>
+          <script>
+            document
+              .getElementsByClassName("Africa")[0]
+              .getElementsByClassName("text")[0]
+              .addEventListener(
+                "click",
+                () => {
+                  window.location.href = "pages/412636085.html";
+                },
+                false
+              );
+          </script>
 
-            <div class="imgSlider" style="
-            --src:
-            ..\\asset\\pyramids of giza.png,
-            ..\\asset\\Rock hewn churches of Liberia.png,
-            ..\\asset\\timbuktu.png,
-            ..\\asset\\serengeti national park.png,
-            ..\\asset\\Island of goree.png;
-            --idx:0;">
-                <script>
-                    runSlider(document.getElementById("nation").getElementsByClassName("Africa")[0].getElementsByClassName("imgSlider")[0]);
-                </script>
-            </div>
+          <div
+            class="imgSlider"
+            style="
+              --src: asset/pyramids_of_giza.png,
+                asset/Rock_hewn_churches_of_Liberia.png, asset/timbuktu.png,
+                asset/serengeti_national_park.png, asset/Island_of_goree.png;
+              --idx: 0;
+            "
+          >
+            <script>
+              runSlider(
+                document
+                  .getElementById("nation")
+                  .getElementsByClassName("Africa")[0]
+                  .getElementsByClassName("imgSlider")[0]
+              );
+            </script>
+          </div>
         </div>
-        <div class="Asia"> 
-            <div class="imgSlider" style="
-            --src:
-            ..\\asset\\great wall of china.png,
-            ..\\asset\\taj mahal.png,
-            ..\\asset\\angkor wat.png,
-            ..\\asset\\Istanbul historic centre.png,
-            ..\\asset\\Kimeji castle.png;
-            --idx:0;">
-                <script>
-                    runSlider(document.getElementById("nation").getElementsByClassName("Asia")[0].getElementsByClassName("imgSlider")[0]);
-
-                    
-                </script>
-            </div>
-            <div class="text">Asia</div> 
+        <div class="Asia">
+          <div
+            class="imgSlider"
+            style="
+              --src: asset/great_wall_of_china.png, asset/taj_mahal.png,
+                asset/angkor_wat.png, asset/Istanbul_historic_centre.png,
+                asset/Kimeji_castle.png;
+              --idx: 0;
+            "
+          >
             <script>
-                document.getElementsByClassName("Asia")[0].getElementsByClassName("text")[0].addEventListener('click',()=>{window.location.href='pages/412855255.html'},false);
+              runSlider(
+                document
+                  .getElementById("nation")
+                  .getElementsByClassName("Asia")[0]
+                  .getElementsByClassName("imgSlider")[0]
+              );
             </script>
-        </div> 
+          </div>
+          <div class="text">Asia</div>
+          <script>
+            document
+              .getElementsByClassName("Asia")[0]
+              .getElementsByClassName("text")[0]
+              .addEventListener(
+                "click",
+                () => {
+                  window.location.href = "pages/412855255.html";
+                },
+                false
+              );
+          </script>
+        </div>
+      </div>
 
+      <div class="UNESCOband"></div>
 
-
-    </div>
-
-    <div class="UNESCOband"></div>
-
-    <div id="definition">
+      <div id="definition">
         <div class="question"><div>What are world heritage sites?</div></div>
-        <div>World Heritage Sites are natural or cultural landmarks recognized by UNESCO for their "Outstanding Universal Value". These sites are of immense importance to humanity and are protected for future generations. </div>
-        <div>As of July 2024, there are a total of 1,223 World Heritage Sites located across 168 countries. These sites are categorized as cultural (952), natural (231), or mixed (40) properties.</div>
-        <div class="question"><div>How many sites are there worldwide?</div></div>
+        <div>
+          World Heritage Sites are natural or cultural landmarks recognized by
+          UNESCO for their "Outstanding Universal Value". These sites are of
+          immense importance to humanity and are protected for future
+          generations.
+        </div>
+        <div>
+          As of July 2024, there are a total of 1,223 World Heritage Sites
+          located across 168 countries. These sites are categorized as cultural
+          (952), natural (231), or mixed (40) properties.
+        </div>
+        <div class="question">
+          <div>How many sites are there worldwide?</div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <img src="asset\unesco_logo.png" />
+
+        <div>
+          <div>Latest News</div>
+          <div>FAQ</div>
+          <div>Follow us</div>
+        </div>
+
+        <div id="ContactUs">
+          <div>Contact us:</div>
+          <div>090909090912</div>
+        </div>
+      </div>
     </div>
-
-
-
-    <div class="footer">
-        <script>
-            loadFooter();
-        </script>
-          
-    </div>
-
-</div>
-</body>
-        
+  </body>
 </html>

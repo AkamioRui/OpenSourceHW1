@@ -1,124 +1,156 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/Subpage_entry.css" />
+    <script src="../js/scripts.js"></script>
 
-<head>
-    <link rel="stylesheet" type="text/css" href="..\css\style.css">
-    <link rel="stylesheet" type="text/css" href="..\css\Subpage_Entry.css">
-    <script src = "..\js\scripts.js"></script>
-    
     <style>
-        .header .text{
-            color: rgb(0, 128, 0);
-            font-size:2rem;
-            margin:0 2rem;
-        }
+      .header .text {
+        color: rgb(0, 128, 0);
+        font-size: 2rem;
+        margin: 0 2rem;
+      }
 
-        .entry .funfact{
-            color: rgb(0, 128, 0);
-        }
- 
+      .entry .funfact {
+        color: rgb(0, 128, 0);
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="canvas">
-        <div class="header">
-            <div class="WorldHeritageSites">World Heritage Sites</div>
-            
-            <div class="text"> Africa</div>
+      <div class="header">
+        <div class="WorldHeritageSites">World Heritage Sites</div>
+
+        <div class="text">Africa</div>
+      </div>
+
+      <img src="../asset/Africa_continent_map.png" />
+      <!-- The Image is too big. Perlu di kecilin to at least maxCanvasWidth 500px in the CSS. -->
+
+      <div class="allEntry">
+        <div class="entry">
+          <div class="title">Pyramids of Giza</div>
+
+          <div class="flex">
+            <div class="profile">
+              <img src="../asset/pyramids_of_giza.png" />
+              <div class="location">Giza, Egypt</div>
+            </div>
+            <div class="descpription">
+              The Pyramids of Giza, including the Great Pyramid of Khufu, are
+              ancient royal tombs that have stood for over 4,500 years. They
+              reflect the engineering prowess and spiritual beliefs of ancient
+              Egyptian civilization.
+            </div>
+          </div>
+
+          <div class="funfact">
+            The Great Pyramid was the tallest man-made structure in the world
+            for over 3,800 years.
+          </div>
         </div>
 
-       
-        <img src="..\asset\Africa continent map.png"> 
-        <!-- The Image is too big. Perlu di kecilin to at least maxCanvasWidth 500px in the CSS. -->  
-
-        <div class="allEntry">
-            <div class="entry">
-                <div class="title"> Pyramids of Giza </div>
-        
-                <div class="flex">
-                    <div class="profile">
-                        <img src="..\asset\pyramids of giza.png">
-                        <div class="location" > Giza, Egypt </div>
-                    </div>
-                    <div class="descpription" > The Pyramids of Giza, including the Great Pyramid of Khufu, are ancient royal tombs that have stood for over 4,500 years. They reflect the engineering prowess and spiritual beliefs of ancient Egyptian civilization.</div>
-                </div>
-        
-                <div class="funfact"> The Great Pyramid was the tallest man-made structure in the world for over 3,800 years. </div>
+        <div class="entry">
+          <div class="title">Rock-Hewn Churches of Lalibela</div>
+          <div class="flex">
+            <div class="profile">
+              <img src="../asset/Rock_hewn_churches_of_Liberia.png" />
+              <div class="location">Amhara Region, Ethiopia</div>
             </div>
-
-            <div class="entry">
-                <div class="title"> Rock-Hewn Churches of Lalibela </div>
-                <div class="flex">
-                    <div class="profile">
-                        <img src="..\asset\Rock hewn churches of Liberia.png">
-                        <div class="location" > Amhara Region, Ethiopia </div>
-                    </div>
-                    <div class="descpription" >  Carved directly into solid rock in the 12th century, the churches of Lalibela are considered a New Jerusalem for Ethiopian Orthodox Christians. The complex showcases a remarkable fusion of religious devotion and architectural ingenuity. </div>
-                </div>
-                <div class="funfact"> There are 11 churches carved entirely from single pieces of stone, connected by tunnels and trenches. </div>
+            <div class="descpription">
+              Carved directly into solid rock in the 12th century, the churches
+              of Lalibela are considered a New Jerusalem for Ethiopian Orthodox
+              Christians. The complex showcases a remarkable fusion of religious
+              devotion and architectural ingenuity.
             </div>
-
-            <div class="entry">
-                <div class="title"> Timbuktu </div>
-                <div class="flex">
-                    <div class="profile">
-                        <img src="..\asset\timbuktu.png">
-                        <div class="location" > City in Mali </div>
-                    </div>
-                    <div class="descpription" > Timbuktu was a center of Islamic scholarship and trade during the 15th and 16th centuries, known for its ancient manuscripts and mud-brick mosques. It symbolizes Africa’s rich intellectual and cultural heritage. </div>
-                </div>
-                <div class="funfact">  Timbuktu’s libraries house hundreds of thousands of ancient manuscripts, some dating back to the 13th century.  </div>
-            </div>
-
-            <div class="entry">
-                <div class="title"> Serengeti National Park </div>
-                <div class="flex">
-                    <div class="profile">
-                        <img src="..\asset\serengeti national park.png">
-                        <div class="location" > Northern Tanzania </div>
-                    </div>
-                    <div class="descpription" > The Serengeti is one of the most iconic wildlife ecosystems in the world, famed for its vast savannas and annual wildebeest migration. It is home to the Big Five and numerous other species in a largely untouched environment. </div>
-                </div>
-                <div class="funfact"> Over 1.5 million wildebeest migrate through the Serengeti every year in one of the largest animal movements on Earth. </div>
-            </div>
-
-            <div class="entry">
-                <div class="title"> Island of Gorée </div>
-                <div class="flex">
-                    <div class="profile">
-                        <img src="..\asset\Island of goree.png">
-                        <div class="location" > Dakar, Senegal </div>
-                    </div>
-                    <div class="descpription" > Gorée Island was a key center of the Atlantic slave trade, where enslaved Africans were held before being shipped across the ocean. Its preserved colonial buildings serve as a stark memorial to a painful history. </div>
-                </div>
-                <div class="funfact"> The House of Slaves on Gorée Island includes the infamous “Door of No Return,” symbolizing the point of departure for countless captives. </div>
-            </div>
-            <script>
-                zigzagAllEntry();
-            </script>
+          </div>
+          <div class="funfact">
+            There are 11 churches carved entirely from single pieces of stone,
+            connected by tunnels and trenches.
+          </div>
         </div>
 
-
-        <div class="footer">
-            <img src="..\asset\unesco_logo.png">
-
-            <div>
-                <div >Latest News</div>
-                <div >FAQ</div>
-                <div >Follow us</div>
+        <div class="entry">
+          <div class="title">Timbuktu</div>
+          <div class="flex">
+            <div class="profile">
+              <img src="../asset/timbuktu.png" />
+              <div class="location">City in Mali</div>
             </div>
-
-            <div id="ContactUs">
-                <div >Contact us:</div>
-                <div>090909090912</div>
+            <div class="descpription">
+              Timbuktu was a center of Islamic scholarship and trade during the
+              15th and 16th centuries, known for its ancient manuscripts and
+              mud-brick mosques. It symbolizes Africa’s rich intellectual and
+              cultural heritage.
             </div>
-              
+          </div>
+          <div class="funfact">
+            Timbuktu’s libraries house hundreds of thousands of ancient
+            manuscripts, some dating back to the 13th century.
+          </div>
         </div>
 
+        <div class="entry">
+          <div class="title">Serengeti National Park</div>
+          <div class="flex">
+            <div class="profile">
+              <img src="../asset/serengeti_national_park.png" />
+              <div class="location">Northern Tanzania</div>
+            </div>
+            <div class="descpription">
+              The Serengeti is one of the most iconic wildlife ecosystems in the
+              world, famed for its vast savannas and annual wildebeest
+              migration. It is home to the Big Five and numerous other species
+              in a largely untouched environment.
+            </div>
+          </div>
+          <div class="funfact">
+            Over 1.5 million wildebeest migrate through the Serengeti every year
+            in one of the largest animal movements on Earth.
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="title">Island of Gorée</div>
+          <div class="flex">
+            <div class="profile">
+              <img src="../asset/Island_of_goree.png" />
+              <div class="location">Dakar, Senegal</div>
+            </div>
+            <div class="descpription">
+              Gorée Island was a key center of the Atlantic slave trade, where
+              enslaved Africans were held before being shipped across the ocean.
+              Its preserved colonial buildings serve as a stark memorial to a
+              painful history.
+            </div>
+          </div>
+          <div class="funfact">
+            The House of Slaves on Gorée Island includes the infamous “Door of
+            No Return,” symbolizing the point of departure for countless
+            captives.
+          </div>
+        </div>
+        <script>
+          zigzagAllEntry();
+        </script>
+      </div>
+
+      <div class="footer">
+        <img src="../asset/unesco_logo.png" />
+
+        <div>
+          <div>Latest News</div>
+          <div>FAQ</div>
+          <div>Follow us</div>
+        </div>
+
+        <div id="ContactUs">
+          <div>Contact us:</div>
+          <div>090909090912</div>
+        </div>
+      </div>
     </div>
-
-</body>
-
-
+  </body>
 </html>
